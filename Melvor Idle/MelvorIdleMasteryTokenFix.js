@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Melvor Idle - Mastery Token Fix
+// @name         Melvor Idle - Better Mastery Tokens
 // @namespace    zuzuvelas/melvor
-// @version      1.0
-// @description  Fixes mastery tokens being able to hit already mastered milestones
+// @version      1.1
+// @description  Makes mastery tokens unable to hit already mastered milestones
 // @author       Zuzuvelas
 // @source       https://github.com/zuzuvelas/User-Scripts
 // @match        https://melvoridle.com/*
