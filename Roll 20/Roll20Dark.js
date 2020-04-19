@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          Roll20 Dark (Zuzuvelas Edit)
+// @name          Roll20 Dark(er)
 // @namespace     zuzuvelas/roll20
 // @description	  A dark theme for Roll20.net.
 // @author        RedReign, Zuzuvelas
@@ -7,18 +7,20 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2019.8.07.1
+// @version       2020.04.19.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
 :root {
-  --accent-color-darken-percentage: 20%;
+  --accent-color-dark-percentage: 20%;
+  --accent-color-darker-percentage: 35%;
   --accent-color-h: 44;
   --accent-color-s: 63%;
   --accent-color-l: 63%;
 
   --accent-color: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
-  --accent-color-dark: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-darken-percentage)));
+  --accent-color-dark: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-dark-percentage)));
+  --accent-color-darker: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-darker-percentage)));
 }
 
 .button-2{
@@ -932,7 +934,7 @@ position: static !important;
 
 #textchat .message.you {
 	color:hsl(0,0%,80%)!important;
-	background-color:hsl(250,25%,15%)!important;
+	background-color: var(--accent-color-darker) !important;
 }
 
 #textchat .message.emote {
