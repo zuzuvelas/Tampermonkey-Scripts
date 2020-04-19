@@ -13,9 +13,9 @@
 (function() {var css =`
 :root {
   --accent-color-darken-percentage: 20%;
-  --accent-color-h: 271;
-  --accent-color-s: 19%;
-  --accent-color-l: 49%;
+  --accent-color-h: 44;
+  --accent-color-s: 63%;
+  --accent-color-l: 63%;
 
   --accent-color: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
   --accent-color-dark: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-darken-percentage)));
