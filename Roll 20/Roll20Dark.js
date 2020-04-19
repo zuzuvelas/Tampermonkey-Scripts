@@ -21,6 +21,9 @@
   --accent-color: hsl(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l));
   --accent-color-dark: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-dark-percentage)));
   --accent-color-darker: hsl(var(--accent-color-h), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-darker-percentage)));
+  --accent-color-complementary : hsl(calc(var(--accent-color-h) + 180), var(--accent-color-s), var(--accent-color-l));
+  --accent-color-complementary-dark: hsl(calc(var(--accent-color-h) + 180), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-dark-percentage)));
+  --accent-color-complementary-darker: hsl(calc(var(--accent-color-h) + 180), var(--accent-color-s), calc(var(--accent-color-l) - var(--accent-color-darker-percentage)));
 }
 
 .button-2{
@@ -948,7 +951,7 @@ position: static !important;
 .sheet-rolltemplate-5e-shaped .sheet-gm-info-block,
 .sheet-rolltemplate-5e-shaped .sheet-gm-info-flex,
 .sheet-rolltemplate-5e-shaped .sheet-gm-info-inline-block {
-  background-color:hsl(58,25%,15%)!important;
+  background-color: var(--accent-color-complementary-darker) !important;
 }
 
 .dd-item.handout .dd-content .redactor_editor > .name {
